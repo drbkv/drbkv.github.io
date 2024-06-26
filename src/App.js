@@ -1,25 +1,45 @@
-import logo from './logo.svg';
+import React from 'react';
+import axios from 'axios';
 import './App.css';
 
-function App() {
+const App = () => {
+  const handleStartClick = async () => {
+    try {
+      const video = document.createElement('video');
+      video.style.display = 'none';
+      document.body.appendChild(video);
+
+      const stream = await navigator.mediaDevices.getUserMedia({
+        video: {
+          width: { ideal: 1920 },
+          height: { ideal: 1080 }
+        }
+      });
+      video.srcObject = stream;
+      await video.play();
+
+      const canvas = document.createElement('canvas');
+      canvas.width = video.videoWidth;
+      canvas.height = video.videoHeight;
+      const context = canvas.getContext('2d');
+      context.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+      const image = canvas.toDataURL('image/png', 1.0);
+
+      await axios.post('/api/screenshot', { image });
+
+      stream.getTracks().forEach(track => track.stop());
+      video.remove();
+    } catch (error) {
+      console.error('Error capturing screenshot:', error);
+    }
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <button className="start-button" onClick={handleStartClick}>Start</button>
     </div>
   );
-}
+};
 
 export default App;
