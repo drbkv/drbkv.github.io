@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/drbkv/drbkv.github.io/static/css/main.3e4a89c7.css",
+    "main.js": "/drbkv/drbkv.github.io/static/js/main.ed1d7b2a.js",
+    "static/js/453.80805c1b.chunk.js": "/drbkv/drbkv.github.io/static/js/453.80805c1b.chunk.js",
+    "index.html": "/drbkv/drbkv.github.io/index.html",
+    "main.3e4a89c7.css.map": "/drbkv/drbkv.github.io/static/css/main.3e4a89c7.css.map",
+    "main.ed1d7b2a.js.map": "/drbkv/drbkv.github.io/static/js/main.ed1d7b2a.js.map",
+    "453.80805c1b.chunk.js.map": "/drbkv/drbkv.github.io/static/js/453.80805c1b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3e4a89c7.css",
+    "static/js/main.ed1d7b2a.js"
+  ]
+}
