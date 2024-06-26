@@ -1,15 +1,13 @@
 {
   "files": {
     "main.css": "/drbkv.github.io/static/css/main.3e4a89c7.css",
-    "main.js": "/drbkv.github.io/static/js/main.0231f902.js",
-    "static/js/453.80805c1b.chunk.js": "/drbkv.github.io/static/js/453.80805c1b.chunk.js",
+    "main.js": "/drbkv.github.io/static/js/main.be12108e.js",
     "index.html": "/drbkv.github.io/index.html",
     "main.3e4a89c7.css.map": "/drbkv.github.io/static/css/main.3e4a89c7.css.map",
-    "main.0231f902.js.map": "/drbkv.github.io/static/js/main.0231f902.js.map",
-    "453.80805c1b.chunk.js.map": "/drbkv.github.io/static/js/453.80805c1b.chunk.js.map"
+    "main.be12108e.js.map": "/drbkv.github.io/static/js/main.be12108e.js.map"
   },
   "entrypoints": [
     "static/css/main.3e4a89c7.css",
-    "static/js/main.0231f902.js"
+    "static/js/main.be12108e.js"
   ]
 }
